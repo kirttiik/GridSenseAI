@@ -1,0 +1,5 @@
+API_V1_PREFIX = ""
+HEALTHY_STATUS = "healthy"
+ROOT_MESSAGE = "Welcome to GridSense AI Backend"
+SERVICE_NAME = "GridSense AI Backend"
+REQUEST_ID_HEADER = "X-Request-ID"

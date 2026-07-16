@@ -1,0 +1,33 @@
+[project]
+name = "gridsense-ai-backend"
+version = "1.0.0"
+description = "Production backend foundation for GridSense AI."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.13.2",
+    "asyncpg>=0.29.0",
+    "fastapi>=0.111.0",
+    "httpx>=0.27.0",
+    "pydantic-settings>=2.3.4",
+    "sqlalchemy[asyncio]>=2.0.31",
+    "uvicorn[standard]>=0.30.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.2.2",
+    "pytest-asyncio>=0.23.7",
+    "ruff>=0.5.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
