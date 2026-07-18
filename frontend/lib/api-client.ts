@@ -1,7 +1,7 @@
 // src/lib/api-client.ts (frontend)
 // Centralized API Client
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1";
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "https://gridsenseai-63wk.onrender.com/api/v1";
 
 export class ApiClient {
   static async request<T>(
