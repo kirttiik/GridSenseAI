@@ -44,9 +44,14 @@ def create_app() -> FastAPI:
     # 1. Security & CORS Middleware
     app.add_middleware(RateLimitMiddleware)
     app.add_middleware(SecurityHeadersMiddleware)
+    origins = [
+        "http://localhost:3000",
+        "https://grid-sense-ai-ebon.vercel.app",
+    ]
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=settings.BACKEND_CORS_ORIGINS,
+        allow_origins=origins,
+        allow_origin_regex=r"https://.*\.vercel\.app",
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
