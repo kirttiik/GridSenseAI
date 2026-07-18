@@ -1,50 +1,83 @@
-from collections.abc import AsyncGenerator
-from contextlib import asynccontextmanager
+import time
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
+from fastapi.middleware.trustedhost import TrustedHostMiddleware
 
-from app.api.v1.router import root_router, router
-from app.core.config import get_settings
-from app.core.exceptions import GridSenseError, gridsense_exception_handler
-from app.core.logging import configure_logging
-from app.database.session import DatabaseSessionManager
+from app.api.v1.router import api_router
+from app.core.settings import settings
+from app.exceptions.handlers import setup_exception_handlers
+from app.logging.logger import logger
+from app.middleware.rate_limit import RateLimitMiddleware
 from app.middleware.request_logging import RequestLoggingMiddleware
-
-
-@asynccontextmanager
-async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
-    settings = get_settings()
-    app.state.db = DatabaseSessionManager(settings)
-    yield
-    await app.state.db.close()
+from app.middleware.security import SecurityHeadersMiddleware
+from app.startup.lifespan import lifespan
 
 
 def create_app() -> FastAPI:
-    settings = get_settings()
-    configure_logging(settings.log_level, settings.log_json)
+    """
+    Bootstraps and configures the FastAPI application instance.
+    Includes middleware registration, routers, and exception handlers.
+    """
+    logger.info(f"Starting {settings.PROJECT_NAME} in {settings.ENVIRONMENT} mode.")
 
     app = FastAPI(
-        title=settings.app_name,
-        version=settings.app_version,
-        debug=settings.debug,
+        title=settings.PROJECT_NAME,
+        version=settings.VERSION,
+        description="GridSense AI Core Backend API for Energy Intelligence",
+        contact={
+            "name": "GridSense AI Team",
+            "url": "https://gridsense.io/contact",
+            "email": "support@gridsense.io",
+        },
+        license_info={
+            "name": "Proprietary",
+            "url": "https://gridsense.io/license",
+        },
+        openapi_url=f"{settings.API_V1_STR}/openapi.json",
+        docs_url="/docs",
+        redoc_url="/redoc",
         lifespan=lifespan,
     )
 
-    app.add_middleware(RequestLoggingMiddleware)
+    # 1. Security & CORS Middleware
+    app.add_middleware(RateLimitMiddleware)
+    app.add_middleware(SecurityHeadersMiddleware)
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=[str(origin) for origin in settings.cors_allowed_origins],
-        allow_credentials=settings.cors_allow_credentials,
-        allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+        allow_origins=settings.BACKEND_CORS_ORIGINS,
+        allow_credentials=True,
+        allow_methods=["*"],
         allow_headers=["*"],
     )
 
-    app.add_exception_handler(GridSenseError, gridsense_exception_handler)
-    app.include_router(root_router)
-    app.include_router(router)
+    # Optional: Restrict hosts in production
+    if settings.ENVIRONMENT == "production":
+        app.add_middleware(
+            TrustedHostMiddleware, allowed_hosts=["api.gridsense.io", "*.gridsense.io"]
+        )
+
+    # 2. Performance Middleware
+    app.add_middleware(GZipMiddleware, minimum_size=1000)
+
+    # 3. Observability & Logging Middleware
+    app.add_middleware(RequestLoggingMiddleware)
+
+    # 4. Global Exception Handlers
+    setup_exception_handlers(app)
+
+    # 5. Routers
+    app.include_router(api_router, prefix=settings.API_V1_STR)
+
+    # Root health redirect or simple message
+    @app.get("/", tags=["System"], include_in_schema=False)
+    async def root():
+        """Redirects or informs users where the docs are."""
+        return {"message": f"Welcome to {settings.PROJECT_NAME}. Docs at /docs"}
 
     return app
 
 
+# The ASGI application entry point
 app = create_app()

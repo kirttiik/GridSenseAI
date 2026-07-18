@@ -1,34 +1,48 @@
-import logging
 import time
-from uuid import uuid4
+import uuid
 
+from fastapi import Request
 from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.requests import Request
-from starlette.responses import Response
 
-from app.core.constants import REQUEST_ID_HEADER
-
-logger = logging.getLogger("app.request")
+from app.logging.logger import logger, request_id_ctx_var
 
 
 class RequestLoggingMiddleware(BaseHTTPMiddleware):
-    async def dispatch(self, request: Request, call_next) -> Response:  # type: ignore[no-untyped-def]
-        request_id = request.headers.get(REQUEST_ID_HEADER, str(uuid4()))
-        start_time = time.perf_counter()
+    """
+    Middleware that generates a unique request ID, injects it into the context var
+    for logging, tracks execution time, and returns the ID in the response headers.
+    """
 
-        response = await call_next(request)
+    async def dispatch(self, request: Request, call_next):
+        # Extract existing X-Request-ID or generate a new UUID4
+        request_id = request.headers.get("X-Request-ID", str(uuid.uuid4()))
 
-        duration_ms = round((time.perf_counter() - start_time) * 1000, 2)
-        response.headers[REQUEST_ID_HEADER] = request_id
+        # Set context variable for the CorrelationIdFilter in logger
+        token = request_id_ctx_var.set(request_id)
 
-        logger.info(
-            "request_completed",
-            extra={
-                "request_id": request_id,
-                "method": request.method,
-                "path": request.url.path,
-                "status_code": response.status_code,
-                "duration_ms": duration_ms,
-            },
-        )
-        return response
+        start_time = time.time()
+
+        try:
+            logger.info(f"Incoming Request: {request.method} {request.url.path}")
+
+            response = await call_next(request)
+
+            process_time = (time.time() - start_time) * 1000
+            logger.info(
+                f"Completed Request: {request.method} {request.url.path} - Status: {response.status_code} - Time: {process_time:.2f}ms"
+            )
+
+            # Attach the request ID to the response header
+            response.headers["X-Request-ID"] = request_id
+            response.headers["X-Process-Time"] = str(process_time)
+
+            return response
+
+        except Exception as e:
+            process_time = (time.time() - start_time) * 1000
+            logger.error(
+                f"Failed Request: {request.method} {request.url.path} - Error: {str(e)} - Time: {process_time:.2f}ms"
+            )
+            raise
+        finally:
+            request_id_ctx_var.reset(token)

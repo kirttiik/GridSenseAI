@@ -1,34 +1,38 @@
-from fastapi import APIRouter, status
+from fastapi import APIRouter, Depends
 
-from app.core.constants import API_V1_PREFIX, HEALTHY_STATUS, ROOT_MESSAGE, SERVICE_NAME
-from app.core.config import get_settings
-
-router = APIRouter(prefix=API_V1_PREFIX)
-
-
-@router.get(
-    "/health",
-    status_code=status.HTTP_200_OK,
-    summary="Health check",
-    tags=["system"],
+from app.api.v1.routers import (
+    dashboard,
+    energy,
+    grid,
+    health,
+    market,
+    sync,
+    weather,
+    insights,
 )
-async def health_check() -> dict[str, str]:
-    settings = get_settings()
-    return {
-        "status": HEALTHY_STATUS,
-        "service": SERVICE_NAME,
-        "version": settings.app_version,
-    }
 
+api_router = APIRouter()
 
-root_router = APIRouter()
+api_router.include_router(health.router, prefix="/health", tags=["Health"])
 
-
-@root_router.get(
-    "/",
-    status_code=status.HTTP_200_OK,
-    summary="Root endpoint",
-    tags=["system"],
+api_router.include_router(
+    dashboard.router, prefix="/dashboard", tags=["Dashboard"]
 )
-async def read_root() -> dict[str, str]:
-    return {"message": ROOT_MESSAGE}
+api_router.include_router(
+    energy.router, prefix="/energy", tags=["Energy"]
+)
+api_router.include_router(
+    market.router, prefix="/market", tags=["Market"]
+)
+api_router.include_router(
+    grid.router, prefix="/grid", tags=["Grid"]
+)
+api_router.include_router(
+    weather.router, prefix="/weather", tags=["Weather"]
+)
+api_router.include_router(
+    insights.router, prefix="/insights", tags=["Insights"]
+)
+api_router.include_router(
+    sync.router, prefix="/sync", tags=["Sync"]
+)

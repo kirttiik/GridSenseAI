@@ -38,6 +38,11 @@ class Settings(BaseSettings):
     log_level: str = Field(default="INFO", alias="LOG_LEVEL")
     log_json: bool = Field(default=True, alias="LOG_JSON")
 
+    energy_atlas_api_url: str = Field(
+        default="https://api.energymap.in", alias="ENERGY_ATLAS_API_URL"
+    )
+    energy_atlas_api_key: str = Field(default="", alias="ENERGY_ATLAS_API_KEY")
+
     @computed_field
     @property
     def is_production(self) -> bool:
