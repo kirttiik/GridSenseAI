@@ -1,0 +1,223 @@
+{
+  "gdam": {
+    "items": [
+      {
+        "timestamp": "2026-06-16T13:00:00+00:00",
+        "mcp_rs_mwh": 4200.78,
+        "mcv_mw": 970.5,
+        "purchase_bid_mw": 2876.4,
+        "sell_bid_mw": 1283.0
+      },
+      {
+        "timestamp": "2026-06-16T13:15:00+00:00",
+        "mcp_rs_mwh": 4920.16,
+        "mcv_mw": 852.4,
+        "purchase_bid_mw": 2978.5,
+        "sell_bid_mw": 1113.5
+      },
+      {
+        "timestamp": "2026-06-16T13:30:00+00:00",
+        "mcp_rs_mwh": 5199.26,
+        "mcv_mw": 887.09,
+        "purchase_bid_mw": 2796.3,
+        "sell_bid_mw": 1858.6
+      },
+      {
+        "timestamp": "2026-06-16T13:45:00+00:00",
+        "mcp_rs_mwh": 5499.3,
+        "mcv_mw": 772.6,
+        "purchase_bid_mw": 2807.3,
+        "sell_bid_mw": 1476.8
+      },
+      {
+        "timestamp": "2026-06-16T14:00:00+00:00",
+        "mcp_rs_mwh": 5499.6,
+        "mcv_mw": 893.59,
+        "purchase_bid_mw": 2931.4,
+        "sell_bid_mw": 1333.9
+      },
+      {
+        "timestamp": "2026-06-16T14:15:00+00:00",
+        "mcp_rs_mwh": 7000.45,
+        "mcv_mw": 1073.5,
+        "purchase_bid_mw": 2982.6,
+        "sell_bid_mw": 1289.5
+      },
+      {
+        "timestamp": "2026-06-16T14:30:00+00:00",
+        "mcp_rs_mwh": 7000.49,
+        "mcv_mw": 1032.1,
+        "purchase_bid_mw": 2970.2,
+        "sell_bid_mw": 1251.1
+      },
+      {
+        "timestamp": "2026-06-16T14:45:00+00:00",
+        "mcp_rs_mwh": 7000.51,
+        "mcv_mw": 1029.9,
+        "purchase_bid_mw": 2989.6,
+        "sell_bid_mw": 1254.9
+      },
+      {
+        "timestamp": "2026-06-16T15:00:00+00:00",
+        "mcp_rs_mwh": 7000.92,
+        "mcv_mw": 726.3,
+        "purchase_bid_mw": 3032.1,
+        "sell_bid_mw": 961.3
+      },
+      {
+        "timestamp": "2026-06-16T15:15:00+00:00",
+        "mcp_rs_mwh": 10000.0,
+        "mcv_mw": 763.39,
+        "purchase_bid_mw": 3034.7,
+        "sell_bid_mw": 963.4
+      }
+    ],
+    "count": 10
+  },
+  "gtam": {
+    "items": [
+      {
+        "timestamp": "2026-06-16T13:00:00+00:00",
+        "session_date": "2026-06-16",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 3793.0,
+        "mcv_mw": 10.75,
+        "purchase_bid_mw": 10.75,
+        "sell_bid_mw": 10.75,
+        "source": "iex_gtam"
+      },
+      {
+        "timestamp": "2026-06-16T13:15:00+00:00",
+        "session_date": "2026-06-16",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 3793.0,
+        "mcv_mw": 10.75,
+        "purchase_bid_mw": 10.75,
+        "sell_bid_mw": 10.75,
+        "source": "iex_gtam"
+      },
+      {
+        "timestamp": "2026-06-16T13:30:00+00:00",
+        "session_date": "2026-06-16",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 3793.0,
+        "mcv_mw": 10.75,
+        "purchase_bid_mw": 10.75,
+        "sell_bid_mw": 10.75,
+        "source": "iex_gtam"
+      },
+      {
+        "timestamp": "2026-06-16T13:45:00+00:00",
+        "session_date": "2026-06-16",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 3793.0,
+        "mcv_mw": 10.75,
+        "purchase_bid_mw": 10.75,
+        "sell_bid_mw": 10.75,
+        "source": "iex_gtam"
+      },
+      {
+        "timestamp": "2026-06-16T14:00:00+00:00",
+        "session_date": "2026-06-16",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 3793.0,
+        "mcv_mw": 10.75,
+        "purchase_bid_mw": 10.75,
+        "sell_bid_mw": 10.75,
+        "source": "iex_gtam"
+      },
+      {
+        "timestamp": "2026-06-16T14:15:00+00:00",
+        "session_date": "2026-06-16",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 3793.0,
+        "mcv_mw": 10.75,
+        "purchase_bid_mw": 10.75,
+        "sell_bid_mw": 10.75,
+        "source": "iex_gtam"
+      },
+      {
+        "timestamp": "2026-06-16T18:30:00+00:00",
+        "session_date": "2026-06-17",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 10000.0,
+        "mcv_mw": 14.75,
+        "purchase_bid_mw": 14.75,
+        "sell_bid_mw": 14.75,
+        "source": "iex_gtam"
+      },
+      {
+        "timestamp": "2026-06-16T18:45:00+00:00",
+        "session_date": "2026-06-17",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 10000.0,
+        "mcv_mw": 15.5,
+        "purchase_bid_mw": 15.5,
+        "sell_bid_mw": 15.5,
+        "source": "iex_gtam"
+      },
+      {
+        "timestamp": "2026-06-16T19:00:00+00:00",
+        "session_date": "2026-06-17",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 10000.0,
+        "mcv_mw": 16.25,
+        "purchase_bid_mw": 16.25,
+        "sell_bid_mw": 16.25,
+        "source": "iex_gtam"
+      },
+      {
+        "timestamp": "2026-06-16T19:15:00+00:00",
+        "session_date": "2026-06-17",
+        "contract_type": "green_dac",
+        "energy_type": "non_solar",
+        "mcp_rs_mwh": 10000.0,
+        "mcv_mw": 16.5,
+        "purchase_bid_mw": 16.5,
+        "sell_bid_mw": 16.5,
+        "source": "iex_gtam"
+      }
+    ],
+    "count": 10
+  },
+  "rec": {
+    "items": [
+      {
+        "session_date": "2026-07-08",
+        "rec_type": "combined",
+        "clearing_price_rs": 380.0,
+        "volume_traded": 324790.0,
+        "buy_bids": 1230033.0,
+        "sell_bids": 547370.0,
+        "floor_price_rs": null,
+        "ceiling_price_rs": null
+      },
+      {
+        "session_date": "2026-06-24",
+        "rec_type": "combined",
+        "clearing_price_rs": 395.0,
+        "volume_traded": 142869.0,
+        "buy_bids": 356259.0,
+        "sell_bids": 558060.0,
+        "floor_price_rs": null,
+        "ceiling_price_rs": null
+      }
+    ],
+    "count": 2
+  },
+  "green_premium": {
+    "gdam_avg_mcp": 6332.15,
+    "dam_avg_mcp": 5061.24,
+    "premium_rs_mwh": 1270.91,
+    "premium_pct": 25.1
+  }
+}

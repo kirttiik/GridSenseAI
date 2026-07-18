@@ -1,0 +1,5 @@
+count
+items
+items[].frequency_hz
+items[].region
+items[].timestamp

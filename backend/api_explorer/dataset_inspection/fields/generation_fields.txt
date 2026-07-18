@@ -1,0 +1,127 @@
+count
+hours
+items
+items[].point_count
+items[].points
+items[].points[].fuel_type
+items[].points[].generation_mw
+items[].points[].provenance
+items[].points[].sanity_scale
+items[].points[].share_fraction
+items[].points[].source
+items[].points[].timestamp
+items[].state
+items[].state_slug
+sanity
+sanity.buckets_clamped
+sanity.buckets_seen
+sanity.per_state
+sanity.per_state.andaman and nicobar islands
+sanity.per_state.andaman and nicobar islands.buckets_clamped
+sanity.per_state.andaman and nicobar islands.capacity_mw
+sanity.per_state.andaman and nicobar islands.directions
+sanity.per_state.andaman and nicobar islands.max_ratio_pre
+sanity.per_state.andaman and nicobar islands.scale_max
+sanity.per_state.andaman and nicobar islands.scale_min
+sanity.per_state.arunachal pradesh
+sanity.per_state.arunachal pradesh.buckets_clamped
+sanity.per_state.arunachal pradesh.capacity_mw
+sanity.per_state.arunachal pradesh.directions
+sanity.per_state.arunachal pradesh.max_ratio_pre
+sanity.per_state.arunachal pradesh.scale_max
+sanity.per_state.arunachal pradesh.scale_min
+sanity.per_state.bihar
+sanity.per_state.bihar.buckets_clamped
+sanity.per_state.bihar.capacity_mw
+sanity.per_state.bihar.directions
+sanity.per_state.bihar.max_ratio_pre
+sanity.per_state.bihar.scale_max
+sanity.per_state.bihar.scale_min
+sanity.per_state.chandigarh
+sanity.per_state.chandigarh.buckets_clamped
+sanity.per_state.chandigarh.capacity_mw
+sanity.per_state.chandigarh.directions
+sanity.per_state.chandigarh.max_ratio_pre
+sanity.per_state.chandigarh.scale_max
+sanity.per_state.chandigarh.scale_min
+sanity.per_state.chhattisgarh
+sanity.per_state.chhattisgarh.buckets_clamped
+sanity.per_state.chhattisgarh.capacity_mw
+sanity.per_state.chhattisgarh.directions
+sanity.per_state.chhattisgarh.max_ratio_pre
+sanity.per_state.chhattisgarh.scale_max
+sanity.per_state.chhattisgarh.scale_min
+sanity.per_state.dadra and nagar haveli and daman and diu
+sanity.per_state.dadra and nagar haveli and daman and diu.buckets_clamped
+sanity.per_state.dadra and nagar haveli and daman and diu.capacity_mw
+sanity.per_state.dadra and nagar haveli and daman and diu.directions
+sanity.per_state.dadra and nagar haveli and daman and diu.max_ratio_pre
+sanity.per_state.dadra and nagar haveli and daman and diu.scale_max
+sanity.per_state.dadra and nagar haveli and daman and diu.scale_min
+sanity.per_state.delhi
+sanity.per_state.delhi.buckets_clamped
+sanity.per_state.delhi.capacity_mw
+sanity.per_state.delhi.directions
+sanity.per_state.delhi.max_ratio_pre
+sanity.per_state.delhi.scale_max
+sanity.per_state.delhi.scale_min
+sanity.per_state.haryana
+sanity.per_state.haryana.buckets_clamped
+sanity.per_state.haryana.capacity_mw
+sanity.per_state.haryana.directions
+sanity.per_state.haryana.max_ratio_pre
+sanity.per_state.haryana.scale_max
+sanity.per_state.haryana.scale_min
+sanity.per_state.himachal pradesh
+sanity.per_state.himachal pradesh.buckets_clamped
+sanity.per_state.himachal pradesh.capacity_mw
+sanity.per_state.himachal pradesh.directions
+sanity.per_state.himachal pradesh.max_ratio_pre
+sanity.per_state.himachal pradesh.scale_max
+sanity.per_state.himachal pradesh.scale_min
+sanity.per_state.jharkhand
+sanity.per_state.jharkhand.buckets_clamped
+sanity.per_state.jharkhand.capacity_mw
+sanity.per_state.jharkhand.directions
+sanity.per_state.jharkhand.max_ratio_pre
+sanity.per_state.jharkhand.scale_max
+sanity.per_state.jharkhand.scale_min
+sanity.per_state.puducherry
+sanity.per_state.puducherry.buckets_clamped
+sanity.per_state.puducherry.capacity_mw
+sanity.per_state.puducherry.directions
+sanity.per_state.puducherry.max_ratio_pre
+sanity.per_state.puducherry.scale_max
+sanity.per_state.puducherry.scale_min
+sanity.per_state.sikkim
+sanity.per_state.sikkim.buckets_clamped
+sanity.per_state.sikkim.capacity_mw
+sanity.per_state.sikkim.directions
+sanity.per_state.sikkim.max_ratio_pre
+sanity.per_state.sikkim.scale_max
+sanity.per_state.sikkim.scale_min
+sanity.per_state.telangana
+sanity.per_state.telangana.buckets_clamped
+sanity.per_state.telangana.capacity_mw
+sanity.per_state.telangana.directions
+sanity.per_state.telangana.max_ratio_pre
+sanity.per_state.telangana.scale_max
+sanity.per_state.telangana.scale_min
+sanity.per_state.tripura
+sanity.per_state.tripura.buckets_clamped
+sanity.per_state.tripura.capacity_mw
+sanity.per_state.tripura.directions
+sanity.per_state.tripura.max_ratio_pre
+sanity.per_state.tripura.scale_max
+sanity.per_state.tripura.scale_min
+sanity.per_state.west bengal
+sanity.per_state.west bengal.buckets_clamped
+sanity.per_state.west bengal.capacity_mw
+sanity.per_state.west bengal.directions
+sanity.per_state.west bengal.max_ratio_pre
+sanity.per_state.west bengal.scale_max
+sanity.per_state.west bengal.scale_min
+sanity.states_clamped
+sources
+state_slug
+view

@@ -1,0 +1,138 @@
+{
+  "data": [
+    {
+      "timestamp": "2026-07-16T18:15:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "50831.000",
+      "sell_bid_mw": "1807.500",
+      "mcv_mw": "1800.700",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    },
+    {
+      "timestamp": "2026-07-16T18:00:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "51390.200",
+      "sell_bid_mw": "1785.400",
+      "mcv_mw": "1778.590",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    },
+    {
+      "timestamp": "2026-07-16T17:45:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "51869.700",
+      "sell_bid_mw": "1772.000",
+      "mcv_mw": "1765.190",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    },
+    {
+      "timestamp": "2026-07-16T17:30:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "52281.900",
+      "sell_bid_mw": "1765.400",
+      "mcv_mw": "1758.570",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    },
+    {
+      "timestamp": "2026-07-16T17:15:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "60344.400",
+      "sell_bid_mw": "1826.400",
+      "mcv_mw": "1819.590",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    },
+    {
+      "timestamp": "2026-07-16T17:00:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "59555.200",
+      "sell_bid_mw": "1818.800",
+      "mcv_mw": "1812.000",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    },
+    {
+      "timestamp": "2026-07-16T16:45:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "58886.100",
+      "sell_bid_mw": "1810.800",
+      "mcv_mw": "1803.980",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    },
+    {
+      "timestamp": "2026-07-16T16:30:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "58136.300",
+      "sell_bid_mw": "1882.800",
+      "mcv_mw": "1875.990",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    },
+    {
+      "timestamp": "2026-07-16T16:15:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "58381.600",
+      "sell_bid_mw": "1877.100",
+      "mcv_mw": "1870.290",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    },
+    {
+      "timestamp": "2026-07-16T16:00:00+00:00",
+      "market_type": "DAM",
+      "region": "All India",
+      "purchase_bid_mw": "58151.400",
+      "sell_bid_mw": "1889.500",
+      "mcv_mw": "1882.680",
+      "mcp_rs_mwh": "10000.000",
+      "source": "iex_dam_snapshot",
+      "collected_at": "2026-07-15T12:30:00.044151+00:00"
+    }
+  ],
+  "meta": {
+    "timestamp": "2026-07-16T12:53:22.764068+00:00",
+    "plan": "sandbox",
+    "key_id_hash": "y2w-eexk-4rwx",
+    "quota": {
+      "daily_limit": 100,
+      "daily_remaining": 99,
+      "minute_limit": 3,
+      "minute_remaining": 3
+    },
+    "freshness_lag_minutes": 0,
+    "data_window": {
+      "history_days": 60,
+      "forecast_days": 7,
+      "freshness_lag_minutes": 0
+    },
+    "count": 10,
+    "lookback_days": 60,
+    "time_window_form": "default",
+    "order": "desc",
+    "requested_limit": 10,
+    "returned_limit": 10,
+    "row_cap_applied": false
+  }
+}

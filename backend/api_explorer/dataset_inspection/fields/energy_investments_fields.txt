@@ -1,0 +1,11 @@
+count
+items
+items[].announcement_date
+items[].announcement_title
+items[].capacity_mw
+items[].company
+items[].investment_usd
+items[].location
+items[].project_type
+items[].source_url
+items[].status

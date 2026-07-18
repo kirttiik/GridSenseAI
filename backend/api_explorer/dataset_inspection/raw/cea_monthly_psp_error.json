@@ -1,0 +1,8 @@
+{
+  "error": "not_found",
+  "did_you_mean": [
+    "/api/intelligence/states",
+    "/api/intelligence/weather",
+    "/api/intelligence/hero-pack"
+  ]
+}

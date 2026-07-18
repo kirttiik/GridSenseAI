@@ -1,0 +1,218 @@
+{
+  "items": [
+    {
+      "node_id": "vedas:vedas:substations.7160",
+      "name": "0935-33KV SS-LOHESRA",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 78.0870558884697,
+      "latitude": 19.0249889743736,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.087055888,
+          19.024988974
+        ]
+      },
+      "state_slug": "telangana",
+      "state_name": "TELANGANA"
+    },
+    {
+      "node_id": "vedas:vedas:substations.7161",
+      "name": "0936-33KV SS-PIPREE",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 78.1089940595886,
+      "latitude": 19.0112763165837,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.10899406,
+          19.011276317
+        ]
+      },
+      "state_slug": "telangana",
+      "state_name": "TELANGANA"
+    },
+    {
+      "node_id": "vedas:vedas:substations.7164",
+      "name": "0939-33KV SS-KALLUR",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 78.1035652197129,
+      "latitude": 19.1041395464791,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.10356522,
+          19.104139546
+        ]
+      },
+      "state_slug": "telangana",
+      "state_name": "TELANGANA"
+    },
+    {
+      "node_id": "vedas:vedas:substations.7165",
+      "name": "0940-33KV SS-KUNTALA",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 78.0975470028828,
+      "latitude": 19.1620882472297,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.097547003,
+          19.162088247
+        ]
+      },
+      "state_slug": "telangana",
+      "state_name": "TELANGANA"
+    },
+    {
+      "node_id": "vedas:vedas:substations.7166",
+      "name": "0941-33KV SS-GOLLAMADA",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 78.1547979784505,
+      "latitude": 19.1743789806603,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.154797978,
+          19.174378981
+        ]
+      },
+      "state_slug": "telangana",
+      "state_name": "TELANGANA"
+    },
+    {
+      "node_id": "vedas:vedas:substations.7174",
+      "name": "0942-33KV SS-THANOOR",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 83.8397961830959,
+      "latitude": 18.999646782400198,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.839796183,
+          18.999646782
+        ]
+      },
+      "state_slug": "odisha",
+      "state_name": "ODISHA"
+    },
+    {
+      "node_id": "vedas:vedas:substations.7175",
+      "name": "0943-33KV SS-BELTHARODA",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 83.8634397261493,
+      "latitude": 19.0936410151713,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.863439726,
+          19.093641015
+        ]
+      },
+      "state_slug": "odisha",
+      "state_name": "ODISHA"
+    },
+    {
+      "node_id": "vedas:vedas:substations.7139",
+      "name": "0944-33KV SS-VELMAL BOPPARAM",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 78.403023259596,
+      "latitude": 19.0444679048389,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.40302326,
+          19.044467905
+        ]
+      },
+      "state_slug": "telangana",
+      "state_name": "TELANGANA"
+    },
+    {
+      "node_id": "vedas:vedas:substations.7158",
+      "name": "0946-33KV SS-DEGAON",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 83.9414448395221,
+      "latitude": 19.0580318126204,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.94144484,
+          19.058031813
+        ]
+      },
+      "state_slug": "odisha",
+      "state_name": "ODISHA"
+    },
+    {
+      "node_id": "vedas:vedas:substations.7159",
+      "name": "0947-33KV SS-WANALPAD",
+      "operator": "TSCPDCL",
+      "node_type": "substation",
+      "status": "existing",
+      "confidence": "vedas",
+      "preferred_osm_id": null,
+      "source_document_id": "vedas-substations-geojson-vedas-substations-3f7407c9a81c",
+      "longitude": 78.0469829810405,
+      "latitude": 19.1045131169193,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.046982981,
+          19.104513117
+        ]
+      },
+      "state_slug": "telangana",
+      "state_name": "TELANGANA"
+    }
+  ],
+  "count": 10,
+  "total": 28744,
+  "limit": 10,
+  "offset": 0
+}

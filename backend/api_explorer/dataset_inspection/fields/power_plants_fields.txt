@@ -1,0 +1,16 @@
+count
+items
+items[].capacity_mw
+items[].commission_year
+items[].fuel_type
+items[].id
+items[].latitude
+items[].longitude
+items[].owner
+items[].plant_name
+items[].state
+items[].state_slug
+items[].status
+limit
+offset
+total

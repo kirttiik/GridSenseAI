@@ -1,0 +1,16 @@
+count
+days
+items
+items[].date
+items[].energy_met_mu
+items[].energy_shortage_mu
+items[].frequency_avg_hz
+items[].frequency_max_hz
+items[].frequency_min_hz
+items[].peak_demand_met_mw
+items[].peak_demand_mw
+items[].peak_shortage_mw
+items[].region
+items[].source_url
+items[].state
+scope

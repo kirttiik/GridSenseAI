@@ -1,0 +1,470 @@
+{
+  "items": [
+    {
+      "timestamp": "2026-07-15T12:58:00+00:00",
+      "frequency_hz": 50.0584,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T13:13:00+00:00",
+      "frequency_hz": 50.0544,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T13:28:00+00:00",
+      "frequency_hz": 50.0166,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T13:43:00+00:00",
+      "frequency_hz": 50.0182,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T13:58:00+00:00",
+      "frequency_hz": 49.9398,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T14:13:00+00:00",
+      "frequency_hz": 49.9573,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T14:28:00+00:00",
+      "frequency_hz": 49.8423,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T14:43:00+00:00",
+      "frequency_hz": 49.8898,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T14:58:00+00:00",
+      "frequency_hz": 49.8755,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T15:13:00+00:00",
+      "frequency_hz": 49.9305,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T15:28:00+00:00",
+      "frequency_hz": 49.9702,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T15:43:00+00:00",
+      "frequency_hz": 49.8953,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T15:58:00+00:00",
+      "frequency_hz": 49.8543,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T16:13:00+00:00",
+      "frequency_hz": 49.8068,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T16:28:00+00:00",
+      "frequency_hz": 49.7602,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T16:43:00+00:00",
+      "frequency_hz": 49.7403,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T16:58:00+00:00",
+      "frequency_hz": 49.7685,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T17:13:00+00:00",
+      "frequency_hz": 49.836,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T17:28:00+00:00",
+      "frequency_hz": 49.9013,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T17:43:00+00:00",
+      "frequency_hz": 49.9013,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T17:58:00+00:00",
+      "frequency_hz": 49.937,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T18:13:00+00:00",
+      "frequency_hz": 49.937,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T18:28:00+00:00",
+      "frequency_hz": 49.9893,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T18:43:00+00:00",
+      "frequency_hz": 49.9618,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T18:58:00+00:00",
+      "frequency_hz": 49.9552,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T19:13:00+00:00",
+      "frequency_hz": 49.9552,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T19:28:00+00:00",
+      "frequency_hz": 50.014,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T19:43:00+00:00",
+      "frequency_hz": 50.0165,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T19:58:00+00:00",
+      "frequency_hz": 50.039,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T20:13:00+00:00",
+      "frequency_hz": 50.019,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T20:28:00+00:00",
+      "frequency_hz": 50.0055,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T20:43:00+00:00",
+      "frequency_hz": 49.9555,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T20:58:00+00:00",
+      "frequency_hz": 49.9002,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T21:13:00+00:00",
+      "frequency_hz": 49.9128,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T21:28:00+00:00",
+      "frequency_hz": 49.9408,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T21:43:00+00:00",
+      "frequency_hz": 49.9258,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T21:58:00+00:00",
+      "frequency_hz": 49.916,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T22:13:00+00:00",
+      "frequency_hz": 49.886,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T22:28:00+00:00",
+      "frequency_hz": 49.8993,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T22:43:00+00:00",
+      "frequency_hz": 49.8392,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T22:58:00+00:00",
+      "frequency_hz": 49.8135,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T23:13:00+00:00",
+      "frequency_hz": 49.821,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T23:28:00+00:00",
+      "frequency_hz": 49.6887,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T23:43:00+00:00",
+      "frequency_hz": 49.7413,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-15T23:58:00+00:00",
+      "frequency_hz": 49.8233,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T00:13:00+00:00",
+      "frequency_hz": 49.8533,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T00:28:00+00:00",
+      "frequency_hz": 49.795,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T00:43:00+00:00",
+      "frequency_hz": 49.7425,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T00:58:00+00:00",
+      "frequency_hz": 49.5487,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T01:13:00+00:00",
+      "frequency_hz": 49.5737,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T01:28:00+00:00",
+      "frequency_hz": 49.9433,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T01:43:00+00:00",
+      "frequency_hz": 49.9057,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T01:58:00+00:00",
+      "frequency_hz": 49.955,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T02:13:00+00:00",
+      "frequency_hz": 49.9725,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T02:28:00+00:00",
+      "frequency_hz": 50.116,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T02:43:00+00:00",
+      "frequency_hz": 50.071,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T02:58:00+00:00",
+      "frequency_hz": 50.0583,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T03:13:00+00:00",
+      "frequency_hz": 50.0457,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T03:28:00+00:00",
+      "frequency_hz": 50.051,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T03:43:00+00:00",
+      "frequency_hz": 50.051,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T03:58:00+00:00",
+      "frequency_hz": 49.9865,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T04:13:00+00:00",
+      "frequency_hz": 49.989,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T04:28:00+00:00",
+      "frequency_hz": 49.9545,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T04:43:00+00:00",
+      "frequency_hz": 49.9545,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T04:58:00+00:00",
+      "frequency_hz": 49.9913,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T05:13:00+00:00",
+      "frequency_hz": 49.9888,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T05:28:00+00:00",
+      "frequency_hz": 49.9903,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T05:43:00+00:00",
+      "frequency_hz": 49.9652,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T05:58:00+00:00",
+      "frequency_hz": 49.9908,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T06:13:00+00:00",
+      "frequency_hz": 49.9832,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T06:28:00+00:00",
+      "frequency_hz": 49.977,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T06:43:00+00:00",
+      "frequency_hz": 49.969,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T06:58:00+00:00",
+      "frequency_hz": 49.9636,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T07:13:00+00:00",
+      "frequency_hz": 49.9676,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T07:28:00+00:00",
+      "frequency_hz": 49.9666,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T07:43:00+00:00",
+      "frequency_hz": 49.9566,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T07:58:00+00:00",
+      "frequency_hz": 50.0112,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T08:13:00+00:00",
+      "frequency_hz": 49.9952,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T08:28:00+00:00",
+      "frequency_hz": 49.9808,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T08:43:00+00:00",
+      "frequency_hz": 50.0008,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T08:58:00+00:00",
+      "frequency_hz": 50.1098,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T09:13:00+00:00",
+      "frequency_hz": 50.0978,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T09:28:00+00:00",
+      "frequency_hz": 49.9902,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T09:43:00+00:00",
+      "frequency_hz": 49.9862,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T09:58:00+00:00",
+      "frequency_hz": 49.968,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T10:23:00+00:00",
+      "frequency_hz": 49.99,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T10:38:00+00:00",
+      "frequency_hz": 49.99,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T10:53:00+00:00",
+      "frequency_hz": 49.9914,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T11:08:00+00:00",
+      "frequency_hz": 49.9914,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T11:23:00+00:00",
+      "frequency_hz": 50.0268,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T11:38:00+00:00",
+      "frequency_hz": 50.0388,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T11:53:00+00:00",
+      "frequency_hz": 50.045,
+      "region": "state_sldc_average"
+    },
+    {
+      "timestamp": "2026-07-16T12:08:47.580318+00:00",
+      "frequency_hz": 50.056,
+      "region": "all_india"
+    }
+  ],
+  "count": 93
+}

@@ -1,0 +1,115 @@
+{
+  "items": [
+    {
+      "company": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth",
+      "announcement_title": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth (9009730)",
+      "project_type": "manufacturing",
+      "investment_usd": null,
+      "location": null,
+      "capacity_mw": null,
+      "announcement_date": "2026-07-16",
+      "status": "announced",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b1d73663-5e3c-4e8b-8714-d22213e8315f.pdf"
+    },
+    {
+      "company": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth",
+      "announcement_title": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth (9009730)",
+      "project_type": "manufacturing",
+      "investment_usd": null,
+      "location": null,
+      "capacity_mw": null,
+      "announcement_date": "2026-07-14",
+      "status": "announced",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/79d3abc2-aa81-4d6a-a847-64771e63fdba.pdf"
+    },
+    {
+      "company": "Antony Waste Handling Cell Ltd",
+      "announcement_title": "Antony Waste Handling Cell Ltd (543254)",
+      "project_type": "manufacturing",
+      "investment_usd": null,
+      "location": "Waste-to-Energy",
+      "capacity_mw": null,
+      "announcement_date": "2026-07-13",
+      "status": "project_announced",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e8354d2f-3093-4afd-9513-9f25496f8d82.pdf"
+    },
+    {
+      "company": "Authum Investment & Infrastructure Ltd",
+      "announcement_title": "Authum Investment & Infrastructure Ltd (750654)",
+      "project_type": "corporate_investment",
+      "investment_usd": null,
+      "location": null,
+      "capacity_mw": null,
+      "announcement_date": "2026-07-12",
+      "status": "order_awarded",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/87758ac5-f1e7-459f-8a06-4eb91eab80f7.pdf"
+    },
+    {
+      "company": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth",
+      "announcement_title": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth (9009730)",
+      "project_type": "manufacturing",
+      "investment_usd": null,
+      "location": null,
+      "capacity_mw": null,
+      "announcement_date": "2026-07-11",
+      "status": "announced",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1bc324ce-0893-4ac6-935c-d54a4a79fc0e.pdf"
+    },
+    {
+      "company": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth",
+      "announcement_title": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth (9009730)",
+      "project_type": "manufacturing",
+      "investment_usd": null,
+      "location": null,
+      "capacity_mw": null,
+      "announcement_date": "2026-07-10",
+      "status": "announced",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6c1e582d-30c2-4ac3-8202-89f62e14acb2.pdf"
+    },
+    {
+      "company": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth",
+      "announcement_title": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth (9009730)",
+      "project_type": "manufacturing",
+      "investment_usd": null,
+      "location": null,
+      "capacity_mw": null,
+      "announcement_date": "2026-07-10",
+      "status": "announced",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/faa3a3a8-484f-41b6-ba22-8ae05f4a25e1.pdf"
+    },
+    {
+      "company": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth",
+      "announcement_title": "Aditya Birla Sun Life Frontline Equity Fund (Trigger Facility) - Growth (9009730)",
+      "project_type": "manufacturing",
+      "investment_usd": null,
+      "location": null,
+      "capacity_mw": null,
+      "announcement_date": "2026-07-09",
+      "status": "announced",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/201dc2cf-461a-4409-bca7-9da830036554.pdf"
+    },
+    {
+      "company": "HDFC Manufacturing Fund Regular IDCW Reinvestment",
+      "announcement_title": "HDFC Manufacturing Fund Regular IDCW Reinvestment (9006299)",
+      "project_type": "manufacturing",
+      "investment_usd": null,
+      "location": null,
+      "capacity_mw": null,
+      "announcement_date": "2026-07-07",
+      "status": "investment_announced",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/500cebb9-09b6-4ef1-bdcb-4bef43d47a5c.pdf"
+    },
+    {
+      "company": "HDFC Manufacturing Fund Regular IDCW Reinvestment",
+      "announcement_title": "HDFC Manufacturing Fund Regular IDCW Reinvestment (9006299)",
+      "project_type": "manufacturing",
+      "investment_usd": null,
+      "location": null,
+      "capacity_mw": null,
+      "announcement_date": "2026-07-07",
+      "status": "investment_announced",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8038a4dc-d540-4d6e-9531-3a63404a257f.pdf"
+    }
+  ],
+  "count": 10
+}
