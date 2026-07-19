@@ -8,16 +8,23 @@ import { AIInsightCard } from "@/components/composites/AIInsightCard"
 import { BarChart, LineChart } from "@/components/charts/ChartWrappers"
 import { Battery, Cloud, Zap, Activity, AlertCircle, Loader2 } from "lucide-react"
 import { useDashboard, useEnergy, useMarket, useWeather, useInsights } from "@/hooks/useApi"
+import { GlobalFilter } from "@/components/analytics/GlobalFilter"
+import { AnalyticsFilter, useGenerationMixAnalytics, useMarketTrendsAnalytics } from "@/hooks/useAnalytics"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-
 export default function DashboardPage() {
+  const [filters, setFilters] = React.useState<AnalyticsFilter>({ resolution: "daily" })
   const { data: dashboardResp, isLoading: isDashboardLoading, isError: isDashboardError } = useDashboard()
+  
+  // Analytics queries
+  const { data: mixResp, isLoading: isMixLoading } = useGenerationMixAnalytics(filters)
+  const { data: trendResp, isLoading: isTrendLoading } = useMarketTrendsAnalytics(filters)
+
   const { data: energyResp, isLoading: isEnergyLoading } = useEnergy()
   const { data: marketResp, isLoading: isMarketLoading } = useMarket()
   const { data: weatherResp, isLoading: isWeatherLoading } = useWeather()
   const { data: insightsResp, isLoading: isInsightsLoading } = useInsights()
 
-  if (isDashboardLoading || isEnergyLoading || isMarketLoading || isWeatherLoading || isInsightsLoading) {
+  if (isDashboardLoading) {
     return (
       <div className="flex flex-col items-center justify-center h-96 space-y-4">
         <Loader2 className="h-8 w-8 animate-spin text-primary" />
@@ -40,22 +47,18 @@ export default function DashboardPage() {
 
   const overview = dashboardResp?.data
   
-  // Transform API data for charts
-  const energyDataList = energyResp?.data || []
-  const generationData = energyDataList.length > 0 
-    ? energyDataList.slice(0, 10).map((d: any) => ({
-        name: new Date(d.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+  // Transform Analytics data for charts
+  const mixDataList = mixResp?.data || []
+  const generationData = mixDataList.map((d: any) => ({
+        name: d.source_type,
         value: d.value_mw
-      })).reverse()
-    : []
+      }))
 
-  const marketDataList = marketResp?.data || []
-  const marketData = marketDataList.length > 0
-    ? marketDataList.slice(0, 10).map((d: any) => ({
-        name: new Date(d.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-        value: d.price_inr
-      })).reverse()
-    : []
+  const trendDataList = trendResp?.data || []
+  const marketData = trendDataList.map((d: any) => ({
+        name: new Date(d.timestamp).toLocaleDateString(),
+        value: d.avg_price_inr
+      }))
 
   const latestWeather = weatherResp?.data?.[0] || null
   const latestInsight = insightsResp?.data?.[0] || null
@@ -71,6 +74,8 @@ export default function DashboardPage() {
         subtitle="Overview of GridSense AI Operations"
         lastUpdated={lastSyncString}
       />
+      
+      <GlobalFilter onFilterChange={setFilters} initialFilters={filters} />
 
       <section>
         <SectionHeader title="Grid Overview" description="Key performance indicators across the grid." />

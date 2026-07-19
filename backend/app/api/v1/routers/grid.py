@@ -37,3 +37,17 @@ async def get_grid_history(
     data = result.scalars().all()
     
     return PaginatedResponse(data=list(data), total=total, page=page, size=page_size)
+
+from app.schemas.analytics import AnalyticsFilter
+from app.services.analytics_service import AnalyticsService
+
+@router.post("/analytics/health")
+async def get_grid_health(
+    filters: AnalyticsFilter,
+    session: AsyncSession = Depends(get_db)
+):
+    """
+    Fetch aggregated grid health metrics based on filters.
+    """
+    svc = AnalyticsService(session)
+    return await svc.get_grid_health(filters)

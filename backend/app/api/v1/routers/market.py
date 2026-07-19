@@ -37,3 +37,17 @@ async def get_market_history(
     data = result.scalars().all()
     
     return PaginatedResponse(data=list(data), total=total, page=page, size=page_size)
+
+from app.schemas.analytics import AnalyticsFilter
+from app.services.analytics_service import AnalyticsService
+
+@router.post("/analytics/trends")
+async def get_market_trends(
+    filters: AnalyticsFilter,
+    session: AsyncSession = Depends(get_db)
+):
+    """
+    Fetch aggregated market trends based on filters.
+    """
+    svc = AnalyticsService(session)
+    return await svc.get_market_trends(filters)

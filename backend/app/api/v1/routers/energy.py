@@ -40,3 +40,17 @@ async def get_energy_history(
     data = result.scalars().all()
     
     return PaginatedResponse(data=list(data), total=total, page=page, size=page_size)
+
+from app.schemas.analytics import AnalyticsFilter
+from app.services.analytics_service import AnalyticsService
+
+@router.post("/analytics/mix")
+async def get_generation_mix(
+    filters: AnalyticsFilter,
+    session: AsyncSession = Depends(get_db)
+):
+    """
+    Fetch aggregated generation mix based on filters.
+    """
+    svc = AnalyticsService(session)
+    return await svc.get_generation_mix(filters)

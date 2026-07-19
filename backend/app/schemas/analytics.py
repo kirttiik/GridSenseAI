@@ -26,3 +26,12 @@ class SummaryResponse(BaseModel):
     breakdown: list[dict[str, Any]] | None = None
 
     model_config = ConfigDict(from_attributes=True)
+
+class AnalyticsFilter(BaseModel):
+    start_date: str | None = None
+    end_date: str | None = None
+    state: str | None = None
+    region: str | None = None
+    fuel: str | None = None
+    market_type: str | None = None
+    resolution: str = "daily"  # hourly, daily, monthly

@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     DEBUG: bool = False
 
     # Security / CORS
-    BACKEND_CORS_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:8000"]
+    BACKEND_CORS_ORIGINS: list[str] = ["*"]
     SECRET_KEY: str = "SUPER_SECRET_CHANGE_IN_PRODUCTION"  # Placeholder
     JWT_ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8  # 8 days

@@ -71,6 +71,9 @@ class MarketIngestionService:
             region = item.get("region", "INDIA")
             price = item.get("price_inr") or item.get("price") or item.get("mcp_rs_mwh") or 0.0
             volume = item.get("volume_mwh") or item.get("volume") or item.get("mcv_mw") or None
+            purchase_bids = item.get("purchase_bids_mw")
+            sell_bids = item.get("sell_bids_mw")
+            mcv = item.get("mcv_mw")
             
             records.append({
                 "id": self._generate_deterministic_id(dt, region, market_type),
@@ -78,7 +81,10 @@ class MarketIngestionService:
                 "region": region,
                 "market_type": market_type,
                 "price_inr": float(price),
-                "volume_mwh": float(volume) if volume is not None else None
+                "volume_mwh": float(volume) if volume is not None else None,
+                "mcv_mw": float(mcv) if mcv is not None else None,
+                "purchase_bids_mw": float(purchase_bids) if purchase_bids is not None else None,
+                "sell_bids_mw": float(sell_bids) if sell_bids is not None else None
             })
             
         return records

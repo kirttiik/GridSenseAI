@@ -10,6 +10,8 @@ import { DataTable } from "@/components/composites/DataTable"
 import { Battery, Zap, Wind, Sun, Loader2, AlertCircle } from "lucide-react"
 import { useEnergy, useInsights } from "@/hooks/useApi"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { GlobalFilter } from "@/components/analytics/GlobalFilter"
+import { AnalyticsFilter, useGenerationMixAnalytics } from "@/hooks/useAnalytics"
 
 const columns = [
   { accessorKey: "region", header: "Region" },
@@ -19,10 +21,12 @@ const columns = [
 ]
 
 export default function EnergyPage() {
+  const [filters, setFilters] = React.useState<AnalyticsFilter>({ resolution: "daily" })
   const { data: energyResp, isLoading: isEnergyLoading, isError: isEnergyError } = useEnergy()
   const { data: insightsResp, isLoading: isInsightsLoading } = useInsights()
+  const { data: mixResp, isLoading: isMixLoading } = useGenerationMixAnalytics(filters)
 
-  if (isEnergyLoading || isInsightsLoading) {
+  if (isEnergyLoading || isInsightsLoading || isMixLoading) {
     return (
       <div className="flex flex-col items-center justify-center h-96 space-y-4">
         <Loader2 className="h-8 w-8 animate-spin text-primary" />
@@ -44,8 +48,9 @@ export default function EnergyPage() {
   }
 
   const rawData = energyResp?.data || []
+  const mixData = mixResp?.data || []
   
-  // Pivot data for AreaChart (group by timestamp)
+  // Pivot data for AreaChart (group by timestamp) - keeping historical logic for Area chart
   const groupedByTime = rawData.reduce((acc: any, curr: any) => {
     const timeStr = new Date(curr.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     if (!acc[timeStr]) acc[timeStr] = { time: timeStr, Solar: 0, Wind: 0, Thermal: 0, Hydro: 0 }
@@ -55,15 +60,10 @@ export default function EnergyPage() {
 
   const generationData = Object.values(groupedByTime).slice(0, 10).reverse() as Record<string, any>[]
 
-  // Pivot data for PieChart (group by source_type)
-  const sourceTotals = rawData.reduce((acc: any, curr: any) => {
-    acc[curr.source_type] = (acc[curr.source_type] || 0) + curr.value_mw
-    return acc
-  }, {})
-
-  const renewableMix = Object.keys(sourceTotals).map((key, i) => ({
-    name: key,
-    value: sourceTotals[key],
+  // Use real analytics for pie chart
+  const renewableMix = mixData.map((d: any, i: number) => ({
+    name: d.source_type,
+    value: d.value_mw,
     fill: `hsl(var(--chart-${(i % 5) + 1}))`
   }))
 
@@ -81,11 +81,11 @@ export default function EnergyPage() {
 
   const insightsData = insightsResp?.data || []
 
-  // Aggregate KPIs
-  const totalGen = Object.values(sourceTotals).reduce((a: any, b: any) => a + b, 0) as number
-  const totalRenewable = renewableMix.filter(r => ['Solar', 'Wind', 'Hydro'].includes(r.name)).reduce((a, b) => a + b.value, 0)
-  const solarGen = sourceTotals['Solar'] || 0
-  const windGen = sourceTotals['Wind'] || 0
+  // Aggregate KPIs from real analytics
+  const totalGen = mixResp?.total_mw || Object.values(regionTotals).reduce((a: any, curr: any) => a + curr.total, 0)
+  const totalRenewable = renewableMix.filter((r: any) => ['Solar', 'Wind', 'Hydro'].includes(r.name)).reduce((a: any, b: any) => a + b.value, 0)
+  const solarGen = mixData.find((d: any) => d.source_type === 'Solar')?.value_mw || 0
+  const windGen = mixData.find((d: any) => d.source_type === 'Wind')?.value_mw || 0
 
   const lastSyncString = rawData.length > 0 ? new Date(rawData[0].timestamp).toLocaleString() : "Never"
 
@@ -96,7 +96,9 @@ export default function EnergyPage() {
         subtitle="Detailed breakdown of power generation by source"
         lastUpdated={lastSyncString}
       />
-
+      
+      <GlobalFilter onFilterChange={setFilters} initialFilters={filters} />
+      
       <section>
         <SectionHeader title="Generation KPIs" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">

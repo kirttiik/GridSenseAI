@@ -20,6 +20,9 @@ class MarketData(Base, UUIDPrimaryKeyMixin, TimestampMixin):
     market_type: Mapped[str] = mapped_column(String(50))  # e.g., DAM, RTM
     price_inr: Mapped[float] = mapped_column(Float)
     volume_mwh: Mapped[float] = mapped_column(Float, nullable=True)
+    mcv_mw: Mapped[float] = mapped_column(Float, nullable=True)
+    purchase_bids_mw: Mapped[float] = mapped_column(Float, nullable=True)
+    sell_bids_mw: Mapped[float] = mapped_column(Float, nullable=True)
 
     __table_args__ = (
         Index("ix_market_data_timestamp_region", "timestamp", "region"),

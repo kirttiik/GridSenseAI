@@ -9,6 +9,7 @@ from app.services.ingestion.grid_ingestion import GridIngestionService
 from app.services.ingestion.market_ingestion import MarketIngestionService
 from app.services.ingestion.weather_ingestion import WeatherIngestionService
 from app.services.ingestion.ai_ingestion import AiIngestionService
+from app.services.ingestion.carbon_ingestion import CarbonIngestionService
 
 logger = logging.getLogger(__name__)
 
@@ -33,6 +34,7 @@ class SyncManager:
             "weather_records": 0,
             "grid_records": 0,
             "market_records": 0,
+            "carbon_records": 0,
             "errors": []
         }
         
@@ -69,7 +71,14 @@ class SyncManager:
             except Exception as e:
                 logger.error(f"Weather sync failed: {e}")
                 
-            # 5. AI Insight (no-op)
+            # 5. Carbon
+            try:
+                carbon_svc = CarbonIngestionService(atlas, self.session)
+                result["carbon_records"] = await carbon_svc.run()
+            except Exception as e:
+                logger.error(f"Carbon sync failed: {e}")
+                
+            # 6. AI Insight (no-op)
             try:
                 ai_svc = AiIngestionService(atlas, self.session)
                 await ai_svc.run()
